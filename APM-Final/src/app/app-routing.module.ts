@@ -18,7 +18,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
                 loadChildren: 'app/products/product.module#ProductModule'
             },
             { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-            { path: '**', component: PageNotFoundComponent }
+            { path: '**', component: PageNotFoundComponent}
         ], { preloadingStrategy: SelectiveStrategy }) // , { enableTracing: true })
     ],
     providers: [ SelectiveStrategy ],
